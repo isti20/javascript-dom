@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Attribute</title>
+  </head>
+  <body>
+    <img
+      id="logo"
+      src="https://www.programmerzamannow.com/img/pzn.png"
+      alt="PZN Logo"
+    />
+
+    <script>
+      const logo = document.getElementById("logo");
+
+      // cara 1: mendapatkan attribute value
+      const src = logo.getAttributeNode("src");
+      console.info(src.name); // src
+      console.info(src.value); // https://www.programmerzamannow.com/img/pzn.png
+
+      // cara 2: mendapatkan attribute value
+      const src2 = logo.getAttribute("src");
+      console.info(src2); // https://www.programmerzamannow.com/img/pzn.png
+    </script>
+  </body>
+</html>
